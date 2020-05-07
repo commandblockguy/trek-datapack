@@ -1,0 +1,15 @@
+To edit a ship:
+Make the changes to the red ship at 1000 150 150
+Run:
+//pos1 919,182,71
+//pos2 1081,103,415
+/tp 1000 150 150
+//copy
+//schem save shipN (where N is the version number)
+//rotate 180
+/tp 1000 150 -150
+//paste -s
+//replace red_terracotta blue_terracotta
+//replace red_stained_glass blue_stained_glass
+//replace redstone_block lapis_block
+/function trek:reset_ships

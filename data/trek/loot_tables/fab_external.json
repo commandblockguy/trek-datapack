@@ -1,0 +1,248 @@
+{
+	"type": "generic",
+	"pools": [
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "random_chance",
+					"chance": 0.005
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:golden_apple",
+					"weight": 100,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {"min": 1, "max": 3}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:enchanted_golden_apple",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "minecraft:potion",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:strength\"}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:potion",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:uncraftable\",CustomPotionEffects:[{Id:11,Duration:3600}]}"
+						},
+						{
+							"function": "set_name",
+							"name": "Potion of Resistance"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:potion",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:regeneration\"}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:potion",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:healing\"}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:splash_potion",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:harming\"}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:splash_potion",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:poison\"}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:potion",
+					"weight": 25,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:strong_strength\"}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:potion",
+					"weight": 25,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:uncraftable\",CustomPotionEffects:[{Id:11,Duration:3600}]}"
+						},
+						{
+							"function": "set_name",
+							"name": "Potion of Resistance"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:potion",
+					"weight": 25,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:strong_regeneration\"}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:potion",
+					"weight": 25,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:strong_healing\"}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:splash_potion",
+					"weight": 25,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:strong_harming\"}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:splash_potion",
+					"weight": 25,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:strong_poison\"}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:potion",
+					"weight": 25,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:fire_resistance\"}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:splash_potion",
+					"weight": 25,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:strong_slowness\"}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:potion",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:turtle_master\"}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:tipped_arrow",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Potion:\"minecraft:strong_harming\"}"
+						},
+						{
+							"function": "set_count",
+							"count": {"min": 3, "max": 10}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:book",
+					"weight": 75,
+					"functions": [
+						{
+							"function": "enchant_with_levels",
+							"treasure": true,
+							"levels": {"min": 5, "max": 25}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:experience_bottle",
+					"weight": 25,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {"min": 1, "max": 5}
+						}
+					]
+				},
+				{
+					"type": "loot_table",
+					"name": "trek:fab_rare",
+					"weight": 5
+				}
+			]
+		}
+	]
+}
