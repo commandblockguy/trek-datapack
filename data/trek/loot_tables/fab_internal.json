@@ -6,7 +6,7 @@
 			"conditions": [
 				{
 					"condition": "random_chance",
-					"chance": 0.0075
+					"chance": 0.0025
 				}
 			],
 			"entries": [
@@ -65,27 +65,27 @@
 				{
 					"type": "item",
 					"name": "minecraft:diamond_helmet",
-					"weight": 5
+					"weight": 3
 				},
 				{
 					"type": "item",
 					"name": "minecraft:diamond_chestplate",
-					"weight": 5
+					"weight": 3
 				},
 				{
 					"type": "item",
 					"name": "minecraft:diamond_leggings",
-					"weight": 5
+					"weight": 3
 				},
 				{
 					"type": "item",
 					"name": "minecraft:diamond_boots",
-					"weight": 5
+					"weight": 3
 				},
 				{
 					"type": "item",
 					"name": "minecraft:diamond_sword",
-					"weight": 5
+					"weight": 3
 				},
 				{
 					"type": "item",
