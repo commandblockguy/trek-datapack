@@ -42,6 +42,9 @@ execute if score @s trekShieldHealth matches 25..49 as @e[tag=trekTmpInRange] ru
 execute if score @s trekShieldHealth matches 1..24 as @e[tag=trekTmpInRange] run data modify entity @s ExplosionRadius set value 3b
 execute if score @s trekShieldHealth matches ..49 run tag @e[tag=trekTmpInRange] add trekShielded
 
+tag @e[tag=trekTmpInRange] remove trekTmpInRange
+tag @s remove trekTmpShielder
+
 # Process high yield torpedoes
 execute if entity @s[tag=!trekShieldDisabled] as @e[tag=trekTorpedoHY,tag=!trekShielded,distance=..100] unless score @s trekID = @e[tag=trekTmpShielder,limit=1] trekID run tag @s add trekTmpInRange
 
