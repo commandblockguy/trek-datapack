@@ -35,7 +35,7 @@ tag @s remove trekTmpShielder
 tag @s add trekTmpShielder
 execute if entity @s[tag=!trekShieldDisabled] as @e[tag=trekTorpedo,tag=!trekShielded,distance=..100] unless score @s trekID = @e[tag=trekTmpShielder,limit=1] trekID run tag @s add trekTmpInRange
 
-execute if score @s trekShieldHealth matches 5.. as @e[tag=trekTmpInRange] run scoreboard players remove @e[tag=trekTmpShielder] trekShieldHealth 5
+execute if score @s trekShieldHealth matches 5.. as @e[tag=trekTmpInRange] run scoreboard players remove @e[tag=trekTmpShielder] trekShieldHealth 3
 execute if score @s trekShieldHealth matches 75.. run kill @e[tag=trekTmpInRange]
 execute if score @s trekShieldHealth matches 50..74 as @e[tag=trekTmpInRange] run data modify entity @s ExplosionPower set value 1b
 execute if score @s trekShieldHealth matches 25..49 as @e[tag=trekTmpInRange] run data modify entity @s ExplosionPower set value 2b
