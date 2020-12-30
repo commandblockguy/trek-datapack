@@ -39,7 +39,6 @@ execute if score @s trekShieldHealth matches 5.. as @e[tag=trekTmpInRange] run s
 execute if score @s trekShieldHealth matches 75.. run kill @e[tag=trekTmpInRange]
 execute if score @s trekShieldHealth matches 50..74 as @e[tag=trekTmpInRange] run data modify entity @s ExplosionPower set value 1b
 execute if score @s trekShieldHealth matches 25..49 as @e[tag=trekTmpInRange] run data modify entity @s ExplosionPower set value 2b
-execute if score @s trekShieldHealth matches 1..24 as @e[tag=trekTmpInRange] run data modify entity @s ExplosionRadius set value 3b
 execute if score @s trekShieldHealth matches ..49 run tag @e[tag=trekTmpInRange] add trekShielded
 
 tag @e[tag=trekTmpInRange] remove trekTmpInRange
@@ -52,7 +51,6 @@ execute if score @s trekShieldHealth matches 5.. as @e[tag=trekTmpInRange] run s
 execute if score @s trekShieldHealth matches 75.. as @e[tag=trekTmpInRange] run data modify entity @s ExplosionPower set value 1b
 execute if score @s trekShieldHealth matches 50..74 as @e[tag=trekTmpInRange] run data modify entity @s ExplosionPower set value 3b
 execute if score @s trekShieldHealth matches 25..49 as @e[tag=trekTmpInRange] run data modify entity @s ExplosionRadius set value 5b
-execute if score @s trekShieldHealth matches 1..24 as @e[tag=trekTmpInRange] run data modify entity @s ExplosionRadius set value 7b
 execute if score @s trekShieldHealth matches ..49 run tag @e[tag=trekTmpInRange] add trekShielded
 
 tag @e[tag=trekTmpInRange] remove trekTmpInRange
