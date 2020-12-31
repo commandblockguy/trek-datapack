@@ -8,3 +8,4 @@ bossbar set trek:shield_b visible true
 
 # Actually mark the event as in progress
 scoreboard players set inProgress trekGeneral 1
+scoreboard players set exploding trekGeneral 0

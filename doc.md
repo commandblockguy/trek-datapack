@@ -18,6 +18,7 @@ General Variables:
 (stored in objective trekGeneral, camelCased)
 
 -   In Progress - 1 if an event is currently running
+-   Exploding - 1 if the event has ended, but there are still TNT loaded
 
 Game Objects:
 =============
