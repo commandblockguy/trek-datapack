@@ -5,6 +5,8 @@ summon minecraft:hopper_minecart ^-9.5 ^5 ^44.4  {Tags:["trek","trekTorpedoColle
 scoreboard players operation @e[tag=trekTorpedoCollector,tag=trekTmpSpawn] trekID = @s trekID
 summon minecraft:hopper_minecart ^7 ^5 ^0  {Tags:["trek","trekShieldCollector"],Items:[{Slot: 0b, id: "minecraft:redstone", tag: {display: {Name: '{"text":"Shield Fuel"}'}}, Count: 63b}, {Slot: 1b, id: "minecraft:barrier", Count: 1b}, {Slot: 2b, id: "minecraft:barrier", Count: 1b}, {Slot: 3b, id: "minecraft:barrier", Count: 1b}, {Slot: 4b, id: "minecraft:barrier", Count: 1b}]}
 summon minecraft:armor_stand ^-5 ^6.83 ^-4  {Tags:["trekInternalFabricator","trek"],Marker:1,Invisible:1}
+# todo: move this elsewhere in the actual ship
+summon minecraft:armor_stand ^-5 ^6.83 ^-4  {Tags:["trekExternalFabricator","trek"],Marker:1,Invisible:1}
 summon minecraft:end_crystal ^-22 ^13 ^34  {Tags:["trek","trekPhaser"],NoBottom:1}
 summon minecraft:end_crystal ^-38 ^13 ^13  {Tags:["trek","trekPhaser"],NoBottom:1}
 summon minecraft:end_crystal ^0 ^-21 ^-87  {Tags:["trek","trekCoreSensor"]}

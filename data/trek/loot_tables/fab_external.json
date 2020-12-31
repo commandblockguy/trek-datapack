@@ -6,7 +6,7 @@
 			"conditions": [
 				{
 					"condition": "random_chance",
-					"chance": 0.0025
+					"chance": 0.0005
 				}
 			],
 			"entries": [
