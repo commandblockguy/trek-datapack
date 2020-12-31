@@ -5,7 +5,7 @@ scoreboard players enable @a[tag=trekDebugAccess] trekDebugTrigger
 
 # Handle debug triggers
 #1: Show menu with other triggers
-tellraw @a[scores={trekDebugTrigger=1}] [{"text":"Trek v2.0 Debug: "},{"text":"[Enable Output] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger trekDebugTrigger set 2"}},{"text":"[Disable Output] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger trekDebugTrigger set 3"}},{"text":"[List General Variables] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger trekDebugTrigger set 4"}},{"text":"[List Entities] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger trekDebugTrigger set 5"}},{"text":"[Debug Commands] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger trekDebugTrigger set 6"}}]
+tellraw @a[scores={trekDebugTrigger=1}] [{"text":"Trek v3 Debug: "},{"text":"[Enable Output] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger trekDebugTrigger set 2"}},{"text":"[Disable Output] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger trekDebugTrigger set 3"}},{"text":"[List General Variables] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger trekDebugTrigger set 4"}},{"text":"[List Entities] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger trekDebugTrigger set 5"}},{"text":"[Debug Commands] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger trekDebugTrigger set 6"}}]
 #2: Show debug messages
 tag @a[scores={trekDebugTrigger=2}] add trekDebugActive
 #3: Hide debug messages
