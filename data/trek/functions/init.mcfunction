@@ -20,7 +20,7 @@ scoreboard objectives add trekShieldHealth dummy
 scoreboard objectives add trekCooldownTime dummy
 
 # So the cores don't blow up immediately
-gamerule randomTickSpeed 1
+gamerule randomTickSpeed 3
 
 execute unless entity @e[tag=trekShip] run tellraw @a[tag=trekDebugActive] [{"text":"[","color":"white"},{"text":"Trek","color":"green"},{"text":"] "},{"text":"No ships found!","color":"red"}]
 
